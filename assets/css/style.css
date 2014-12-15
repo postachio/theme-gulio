@@ -9540,6 +9540,7 @@ hr.large {
 }
 .blog-post .post-body .post-content img {
   max-width: 100%;
+  height: auto;
 }
 .blog-post .post-body .post-content .mejs-container {
   margin-top: 7.5px;
