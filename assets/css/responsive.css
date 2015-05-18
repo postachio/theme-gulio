@@ -1,0 +1,220 @@
+/* 
+   ------------------------------------------------------
+					Responsive Styles
+   ------------------------------------------------------
+*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	/*------------------------------------------*/
+	/*	  Titlebar
+	/*------------------------------------------*/
+	
+	.titlebar h2 { font-size: 26px;}
+	.titlebar h3 { font-size: 20px; line-height: 24px; margin-bottom: 15px; }
+	.titlebar p { font-size: 17px; margin-bottom: 25px; }
+	
+	/*------------------------------------------*/
+	/*	 Intro Page
+	/*------------------------------------------*/
+	
+	.intro-content { width: 100%; }
+	.intro-content h1 { font-size: 450%; }
+	.intro-content h3 { font-size: 150%; }
+	
+	
+	#banner_1 .titlebar, #banner_2 .titlebar, #banner_3 .titlebar { margin-bottom: 0; }
+
+	/*------------------------------------------*/
+	/*	  Newsletter
+	/*------------------------------------------*/
+	
+	.subscribe-form {width: 100%;}
+	#newsletter_title h1 { font-size: 32px }
+	#newsletter_title p {line-height: 22px; font-size: 17px; padding: 0 2%; }
+	.subscribe-submit {width: 32%;}
+		
+	/*------------------------------------------*/
+	/*	  Banner_2 List Content
+	/*------------------------------------------*/
+
+	.list-item {margin-bottom: 16px;}
+	
+	/*------------------------------------------*/
+	/*	 Image Scale ( Hover Effect )
+	/*------------------------------------------*/
+
+	.hover-details:hover .image_zoom {top: 40%;}
+
+	/*------------------------------------------*/
+	/*	  Banner_3 Action Buttons
+	/*------------------------------------------*/
+	
+	.stores img {width: 30%;}
+
+	/*------------------------------------------*/
+	/*	 Testimonial Message Text
+	/*------------------------------------------*/
+
+	.testimonials p {font-size: 22px;}
+	
+	
+}
+
+
+@media only screen and (max-width: 991px){
+	
+	/*------------------------------------------*/
+	/*	  Titlebar
+	/*------------------------------------------*/
+	
+	.titlebar h2 { font-size: 26px;}
+	.titlebar h3 { font-size: 20px; line-height: 24px; margin-bottom: 15px; }
+	.titlebar p { font-size: 17px; margin-bottom: 25px; }
+	
+	/*------------------------------------------*/
+	/*	 Intro Page
+	/*------------------------------------------*/
+	
+	.intro-content { width: 100%; }
+	.intro-content h1 { font-size: 450%; }
+	.intro-content h3 { font-size: 150%; }
+	
+	/*------------------------------------------*/
+	/*	  Banner_2 Image
+	/*------------------------------------------*/
+
+	#banner_2_image { text-align: center !important;}
+	#banner_2 .img-responsive { display: inline-block; margin-bottom: 40px;	}
+	.list-item {margin-bottom: 15px;}
+	.list-item h5 { font-size: 16px; }
+
+	/*------------------------------------------*/
+	/*	  Banner_3 Image
+	/*------------------------------------------*/
+
+	#banner_3_image { text-align: center !important;}
+	#banner_3 .img-responsive { display: inline-block; margin-top: 40px; }
+	
+	/*------------------------------------------*/
+	/*	  Newsletter Form
+	/*------------------------------------------*/
+
+	.subscribe-form {width: 76%;}
+	
+	/*------------------------------------------*/
+	/*	 Testimonial
+	/*------------------------------------------*/
+	
+	.testimonials {margin: 50px 0%;}
+	.testimonials p {font-size: 20px;}
+	
+	/*------------------------------------------*/
+	/*	  Pricing Table
+	/*------------------------------------------*/
+	
+	#pricing-table-holder {padding: 0; }
+	.pricing-table .plan-title {font-size: 18px; padding: 30px 6px;}
+	.pricing-table .plan-price h2 {font-size: 40px; }
+	.pricing-table ul.features { padding: 5px;}
+
+	
+}
+
+
+@media only screen and (max-width: 767px){
+
+	/*------------------------------------------*/
+	/*	 Responsive Menu
+	/*------------------------------------------*/
+	
+	.navbar {padding: 0px; background-color: #5a843b;}
+	.navbar-brand { line-height: 64px; padding: 0 25px;}
+	.navbar-nav > li > a, .navbar-brand .black-color { color: #fff; }
+	.navbar-nav > li > a:hover, 
+	.navbar-nav > li { text-align: center;}
+	.navbar-nav > li > a { line-height: 40px; text-align: center; }	
+	.navbar-nav > li > a:hover,.navbar-nav > li > a.selected-nav {color: #333;background-color: transparent;}
+	
+	
+	.titlebar, .banner_1_content, #features .col-sm-6, .banner_2_content, #screenshots-holder1, 
+	#screenshots-holder2, .banner_3_content, #contact .col-sm-12 { margin-right: 60px; margin-left: 60px;}
+	#pricing-table-holder  { margin-right: 100px; margin-left: 100px;}
+	
+	/*------------------------------------------*/
+	/*	  Feature Box
+	/*------------------------------------------*/
+
+	.feature-box { margin-bottom: 30px; }
+	
+}
+
+
+@media (max-width: 480px) {
+
+	/*------------------------------------------*/
+	/*	 Intro Page
+	/*------------------------------------------*/
+	
+	.intro-content { width: 100%; }
+	.intro-content h1 { font-size: 350%; line-height: 100%; }
+	.intro-content h3 { font-size: 150%; }
+	
+	/*------------------------------------------*/
+	/*	  Titlebar
+	/*------------------------------------------*/
+	
+	.titlebar h2 { font-size: 26px;}
+	.titlebar h3 { font-size: 20px; line-height: 24px; margin-bottom: 15px; }
+	.titlebar p { font-size: 17px; margin-bottom: 25px; }
+	
+	.titlebar, .banner_1_content, #features .col-sm-6, .banner_2_content, #screenshots-holder1, 
+	#screenshots-holder2, .banner_3_content, #contact .col-sm-12 { margin-right: 15px; margin-left: 15px;}
+	#pricing-table-holder  { margin-right: 20px; margin-left: 20px;}
+	
+	
+	.list-item h5 { font-size: 14px; }
+
+	/*------------------------------------------*/
+	/*	  Newsletter
+	/*------------------------------------------*/
+	
+	#newsletter_title h1 { font-size: 30px;}
+	#newsletter_title p {line-height: 22px; font-size: 17px; padding: 0; }
+	.subscribe-form {width: 90%;}
+	.subscribe-submit {width: 35%;}
+	
+	/*------------------------------------------*/
+	/*	  Screens
+	/*------------------------------------------*/	
+	
+	#screenshots-holder1 .col-xs-6, #screenshots-holder2 .col-xs-6 { width: 100%; float: none; }
+	
+	.stores { text-align: center;}
+	.stores a { display: block; margin-bottom: 8px;}
+
+	
+}
+
+
+@media (max-width: 320px) {
+
+	.titlebar, .banner_1_content, #features .col-sm-6, .banner_2_content, #screenshots-holder1, 
+	#screenshots-holder2, .banner_3_content, #contact .col-sm-12, #pricing-table-holder  { margin-right: 5px; margin-left: 5px;}
+
+	/*------------------------------------------*/
+	/*	 Intro Page
+	/*------------------------------------------*/
+	
+	.intro-content { width: 100%; }
+	.intro-content h1 { font-size: 250%; line-height: 100%; }
+	.intro-content h3 { font-size: 120%; }
+	
+	/*------------------------------------------*/
+	/*	  Titlebar
+	/*------------------------------------------*/
+	
+	.titlebar h2 { font-size: 24px;}
+	.titlebar h3 { font-size: 18px; line-height: 24px; margin-bottom: 15px; }
+	.titlebar p { font-size: 15px; margin-bottom: 25px; }
+}
