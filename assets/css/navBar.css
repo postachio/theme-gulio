@@ -1,0 +1,1574 @@
+/*Template Name: Pilot - Responsive Landing Page Template
+Theme URL: http://themeforest.net/user/DSA79/
+Description: Pilot - Responsive Landing Page Template
+Author: DSA79
+Author URL: http://themeforest.net/user/DSA79
+Version: 1.0.0
+Website: www.dsathemes.com
+Tags: responsive, html5 template, one page, landing, mobile app, company, creative, business, corporate, project
+*/
+
+
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+
+/*   01 - General & Basic Styles   */
+/*   02 - Header & Navigation      */
+/*   03 - Intro      			   */
+/*   04 - broken_grid              */
+/*   05 - microgrids               */
+/*   06 - storage	               */
+/*   07 - power_play               */
+/*   08 - Screens			       */
+/*   09 - Banner_3	               */ 
+/*   10 - Testimonials Rotator	   */
+/*   11 - Solar Calculator         */
+/*   12 - Contact	               */
+/*   13 - Footer         		   */
+/*   14 - Scroll to Top	   		   */
+/*   15 - Contact Form Response    */
+/*   16 - Product Overview         */
+/*   17 - Structural               */
+/*   18 - Price Table              */
+/*   19 - Images                   */
+/*   20 - Blog                     */
+
+
+/* ==========================================================================
+   01. GENERAL & BASIC STYLES
+   ========================================================================== */ 
+
+/*------------------------------------------*/
+/*	 Preload Animation 
+/*------------------------------------------*/
+#preloader{
+	position: fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:99999; 
+	background-color:#fff;
+}
+
+#status{
+	position:absolute;
+	top:50%; 
+	left:50%; 
+	margin:-100px 0 0 -100px;
+	width:200px;
+	height:200px;
+	background-image:url(/images/icons/loader.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:125px 125px;
+}        
+   
+/*------------------------------------------*/
+/*	 Parallax Settings
+/*------------------------------------------*/
+
+#power_play.parallax {
+	background-attachment: fixed !important;
+	background-position: center 80px;
+	background-repeat: no-repeat;
+	background-size: cover;
+    responsive: false;
+}
+
+#intro_page.parallax {
+	background-attachment: fixed !important;
+	background-position: center 0px;
+    width: 100%;
+    height: auto;
+	padding-bottom:20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    responsive: false;
+}
+#appIntroPage.parallax {
+	background-attachment: fixed !important;
+	background-position: center 0px;
+    width: 100%;
+    height: auto;
+	padding-bottom:20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    responsive: false;
+}
+
+#battery_page.parallax {
+	background-attachment: fixed !important;
+	background-position: center 0px;
+	width: 100%;
+    height: auto;
+	padding-bottom:20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    responsive: false;
+}
+
+#distributed_power.parallax {
+	background-attachment: fixed !important;
+	background-position: center 0px;
+	width: 100%;
+    height: auto;
+	padding-bottom:20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    responsive: false;
+}
+
+#calculator_page.parallax {
+	background-attachment: fixed !important;
+	background-position: center 0px;
+	width: 100%;
+    height: auto;
+	padding-bottom:20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    responsive: false;
+}
+#blog_page.parallax {
+	background-attachment: fixed !important;
+	background-position: center 0px;
+    width: auto;
+    height: auto;
+	padding-bottom:20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    responsive: false;
+}
+#distributedPowerIntro {
+	opacity:.4;
+	filter: alpha(opacity=20);
+}
+
+#power_play { 
+	background-image: url(/images/The_Elecyr_Team.jpg);
+}
+
+#intro_page {
+	background-image: url(/images/intro_slide_1.jpg);
+}
+#appIntroPage {
+	background-image: url(/images/applicationIntroSlide.jpg);
+}
+#battery_page { 
+	background-image: url(/images/battery300.jpg);
+}
+
+#calculator_page {
+	background-image: url(/images/calculator.jpg);
+}
+#blog_page {
+	background-image: url(/images/sail0.jpg);
+}
+
+#distributed_power {
+	background-image: url(/images/energyStorage.jpg);
+}
+
+#testimonials-rotator { 
+	background-image: url(/images/testimonials_bkg.jpg); 
+}
+
+/*------------------------------------------*/
+/*	 Headers
+/*------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0; 
+	margin-bottom: 10px;
+}
+
+
+/*------------------------------------------*/
+/*	 Link Setting
+/*------------------------------------------*/
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+a:hover {
+	color: #5a843b;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #f8f8f8;
+	outline: none;
+	text-decoration: none;
+}
+
+.feature-box-content a {
+    color: #062f00;
+}
+
+/*------------------------------------------*/
+/*	 Lists
+/*------------------------------------------*/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*------------------------------------------*/
+/*	 Theme Button
+/*------------------------------------------*/
+
+.btn-theme {
+	background-color: #d2c16f;
+	border: 1px solid #787266;
+	color: #fff;
+	font-size: 100%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding: 10px 20px;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.btn-theme:hover {
+	background-color: #5a843b;
+	border-color: #5a843b;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------------------------------*/
+/*	 Black Button
+/*------------------------------------------*/
+
+.btn-black {
+	background-color: #5a843b;
+	border: 1px solid #5a843b;
+	color: #fff;
+	font-size: 100%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding: 10px 20px;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.btn-black:hover {
+	background-color: #222;
+	border-color: #222;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------------------------------*/
+/*	 Button Large
+/*------------------------------------------*/
+
+.btn-lg {
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+/*------------------------------------------*/
+/*	 Button Hover/Focus
+/*------------------------------------------*/
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:focus {
+	color: #f8f8f8;
+	text-decoration: none;
+}
+/*------------------------------------------*/
+/*	 Section Formatting
+/*------------------------------------------*/
+.imageSection {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0px;
+	z-index: -6;
+	display: block;
+	overflow: hidden;
+	padding: 0 !important;
+}
+
+/*------------------------------------------*/
+/*	 Section .subSection
+/*------------------------------------------*/
+section{
+	padding-top:2%;
+	padding-bottom:4%;
+}
+@media only screen and (max-width: 767px) {
+	section{
+		padding-bottom:8%;
+	}
+}
+.striped:nth-child(odd) {
+	background-color: #afafaf;
+}
+.singleStripe{
+	background-color: #afafaf;
+}
+.subSection{
+	font-family: sans-serif;
+}
+.subSection h1{
+	font-family: sans-serif;
+
+	padding-bottom:30px;
+}
+.subSection h2 {
+	padding-top:30px;
+	padding-bottom:30px;
+	font-family: sans-serif;
+}
+.subSection h3 {
+	padding-top: 30px;
+	padding-bottom:30px;
+	font-family: sans-serif;
+}
+.subSection h4{
+	font-weight:bold;
+}
+.subSection p{
+	color: #062f00;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+}
+
+.techDetails p{
+	color: #062f00;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+}
+
+/*------------------------------------------*/
+/*	 Section Titlebar
+/*------------------------------------------*/
+.titlebar {
+	margin-bottom: 50px;
+}
+.titlebar h1{
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+	
+.titlebar h2 {
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.titlebar h3 {
+	line-height: 30px;
+}
+
+.titlebar h3 span {
+	color: #062f00;
+}
+
+.titlebar p {
+	color: #062f00;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+	padding:10px;
+}
+
+/* ==========================================================================
+   02. HEADER & NAVIGATION
+   ========================================================================== */
+
+/*------------------------------------------*/
+/*	 Logo Image    
+/*------------------------------------------*/
+
+.navbar-brand {
+	padding: 10px 15px;
+}  
+
+.navbar-brand:hover {
+	color: #fff;
+} 
+      
+/*------------------------------------------*/
+/*	 Navigation Menu    
+/*------------------------------------------*/
+
+.navbar {	
+	margin-bottom: 0;
+	-webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+	padding: 30px 0px;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.navbar-fixed-top { 
+	border-bottom: none;
+}
+
+.navbar-nav > li > a {
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	line-height: 80px;
+	font-weight: 350;
+	text-transform: uppercase;
+	display: block;
+	padding: 0 15px;
+	-webkit-transition: all 100ms ease-in-out;
+	-moz-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	-ms-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	 Navbar Scroll   
+/*------------------------------------------*/
+
+.scroll-fixed-navbar {
+	padding: 0px;
+	background-color: #afafaf;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 1.0;
+}
+
+.scroll-fixed-navbar .navbar-nav > li > a,
+.scroll-fixed-navbar .navbar-brand .black-color { 
+		color: #fff;
+}
+/*----------------------------------------------
+    Navbar (distributed Power Page only)
+------------------------------------------------*/
+.gray-navbar {
+	padding: 0px;
+	background-color: #afafaf;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 1.0;
+}
+/*------------------------------------------*/
+/*	 Menu Hover
+/*------------------------------------------*/
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a.selected-nav {
+	color: #fff;
+    background-color: transparent;
+}
+
+.scroll-fixed-navbar .navbar-nav > li > a:hover, 
+.scroll-fixed-navbar .navbar-nav > li > a.selected-nav {
+	color: #333;
+}
+
+/*------------------------------------------*/
+/*	 Responsive Menu    
+/*------------------------------------------*/
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+	background-color: none;
+    padding: 10px;
+	margin: 13px 30px 13px 0;
+	border: none;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+/* ==========================================================================
+   03. INTRO   
+   ========================================================================== */   
+
+#intro {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0px;
+	z-index: 1;
+	display: block;
+	overflow: hidden;
+	padding: 0 !important;
+	text-align: center;
+}
+
+.intro_page h1 {
+    color: #ffffff;
+	font-size: 275%;
+	font-weight: 500;
+	line-height: 95%;
+    margin-top: 150px;
+	margin-bottom: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-shadow: 3px 3px 5px #666666;
+	text-align:center;
+}
+
+.intro_page h3 {
+    color: #ffffff;
+	font-size: 225%;
+	font-weight: 350;
+	margin-top: 2.0em;
+}
+
+.title-1 h3 {
+    margin-right: 37%;
+    margin-left: 0%;
+	margin-top: 3.0em;
+}
+
+.title-2 h3 {
+    margin-right: 50%;
+    margin-left: 0%;
+    margin-top: 1.0em;
+}
+
+.title-3 h3 {
+    margin-right: 57%;
+    margin-left: 0%;
+    margin-top: 1.0em;
+    margin-bottom: 20%;
+}
+.subSection h1 {
+	font-family: sans-serif;
+	color: #062f00;
+}
+.subSection h2 {
+	padding-top:30px;
+	padding-bottom:30px;
+	font-family: sans-serif;
+}
+.subSection h3 {
+	padding-top: 30px;
+	padding-bottom:30px;
+	font-family: sans-serif;
+}
+	
+
+.intro_page {
+	vertical-align: bottom;
+	display: inline-block;
+}
+
+
+   
+/*------------------------------------------*/
+/*	 Intro Page Scroll Down Button
+/*------------------------------------------*/
+
+.scroll-down {
+	width: 100%;
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 5%;
+	z-index: 99;
+}
+
+.scroll-down span {
+	background: transparent;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto 10px;
+	border: 2px solid #fff;
+	box-shadow: 0px 0px 0px 0 rgba(10, 10, 10, 0.15);
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+.scroll-down span:hover {
+	background: #59833b;
+	border-color: #59833b;
+	box-shadow: 0px 0px 0px 10px rgba(240, 240, 240, 0.3);
+}
+
+.scroll-down span [class*="fa-"] {
+	color: #fff;
+	font-size: 36px;
+	line-height: 40px;
+}
+
+
+/* ==========================================================================
+   04. BROKEN GRID
+   ========================================================================== */
+
+#broken_grid {
+	padding-top: 80px;
+	border-bottom: 1px solid #ddd;
+}
+
+.broken_grid_content h3 {
+	color: #5a843b;
+	margin-bottom: 20px;
+}
+
+.broken_grid_content p {
+	color: #5a843b;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+	margin-bottom: 30px;
+}
+
+.broken_grid_content p strong {
+	line-height: 24px;
+}
+
+.extra_padding {
+    margin-top: 35px;
+}
+
+/*------------------------------------------*/
+/*	  broken_grid Image
+/*------------------------------------------*/
+
+#broken_grid .img-responsive { 
+	display: inline-block; 
+}
+
+
+/* ==========================================================================
+   04. BATTERY PACK
+   ========================================================================== */
+
+#battery_pack {
+	padding-top: 80px;
+	border-bottom: 1px solid #ddd;
+}
+
+.battery_pack h3 {
+	color: #5a843b;
+	margin-bottom: 20px;
+}
+.battery_pack ul{
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+.battery_pack p {
+	color: #5a843b;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+	margin-top:30px;
+	margin-bottom: 30px;
+}
+
+.battery_pack p strong {
+	line-height: 24px;
+}
+
+
+
+/*------------------------------------------*/
+/*	  battery_pack Image
+/*------------------------------------------*/
+
+#battery_pack .img-responsive {
+	display: inline-block; 
+}
+
+/* ==========================================================================
+   05. MICROGRIDS
+   ========================================================================== */
+
+#microgrids {
+	padding-top: 80px;
+	padding-bottom: 40px;
+	background-color: #ecf0f1;
+	border-bottom: 1px solid #ddd;
+}  
+   
+/* ==========================================================================
+   07. BENEFITS
+   ========================================================================== */
+
+#benefits {
+	padding-top: 80px;
+	padding-bottom: 40px;
+	background-color: #ecf0f1;
+	border-bottom: 1px solid #ddd;
+}
+
+
+/* ==========================================================================
+   06. STORAGE
+   ========================================================================== */
+
+#storage {
+	padding-top: 100px;
+}
+
+.storage_content h3 {
+	color: #5a843b;
+	margin-bottom: 20px;
+}
+
+.storage_content p {
+	color: #5a843b;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+	margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   07. POWER PLAY
+   ========================================================================== */
+
+.power_play h1 {
+    color: #ffffff;
+	font-size: 250%;
+	font-weight: 450;
+	line-height: 95%;
+    margin-top: 400px;
+	margin-bottom: 20px; 
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.power_play h3 {
+    color: #ffffff;
+	font-size: 160%;
+	font-weight: 550;
+    margin-right: 25%;
+	margin-top: 0; 
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.power_play {
+	vertical-align: bottom;
+	display: inline-block;
+	padding: 50px;
+}
+
+/* ==========================================================================
+   07. BATTERY PAGE
+   ========================================================================== */
+
+.battery_page h1 {
+    color: #ffffff;
+	font-size: 250%;
+	font-weight: 450;
+	line-height: 95%;
+    margin-top: 450px;
+	margin-bottom: 20px; 
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.battery_page h3 {
+    color: #ffffff;
+	font-size: 160%;
+	font-weight: 550;
+    margin-right: 10%;
+    margin-left: 10%;
+	margin-top: 0;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.battery_page {
+	vertical-align: bottom;
+	display: inline-block;
+	padding: 150px;
+}
+
+/* ==========================================================================
+   07. DISTRIBUTED POWER
+   ========================================================================== */
+#distributedPowerIntro {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0px;
+	z-index: 1;
+	display: block;
+	overflow: hidden;
+	padding: 0 !important;
+	text-align: right;
+}
+	
+.distributed_power h1 {
+    color: #ffffff;
+	font-size: 250%;
+	font-weight: 450;
+	line-height: 95%;
+    margin-top: 450px;
+	margin-bottom: 20px; 
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.distributed_power h3 {
+    color: #ffffff;
+	font-size: 140%;
+	font-weight: 550;
+	margin-top: 0;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.distributed_power {
+	vertical-align: bottom;
+	display: inline-block;
+	padding: 50px;
+}
+
+/* ==========================================================================
+   07. DISTRIBUTED POWER
+   ========================================================================== */
+
+.solar_sizing h1 {
+    color: #ffffff;
+	font-size: 250%;
+	font-weight: 450;
+	line-height: 95%;
+    margin-top: 140px;
+	margin-bottom: 360px;
+    margin-left: 60%;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.solar_sizing h3 {
+    color: #ffffff;
+	font-size: 160%;
+	font-weight: 550;
+    margin-right: 10%;
+    margin-left: 10%;
+	margin-top: 0;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.solar_sizing {
+	vertical-align: bottom;
+	display: inline-block;
+	padding: 50px;
+}
+
+/* ==========================================================================
+   05. TECHNOLOGY
+   ========================================================================== */
+
+#technology {
+	padding-top: 50px;
+	border-bottom: 1px solid #ddd;
+}  
+#calcBody{
+	width: 100%;
+	background-color: #CCCCCC;
+}
+   
+/*------------------------------------------*/
+/*	  Feature Box
+/*------------------------------------------*/
+
+.feature-box {
+	margin-bottom: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*------------------------------------------*/
+/*	  Feature Box Icon
+/*------------------------------------------*/
+
+.feature-box-icon {
+    background-color: #5a843b;
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    border-radius: 30px;
+    color: #FFF;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.feature-box-icon a {
+  color: #fdfebe;
+  text-decoration: none;
+}
+
+.feature-box-icon a:hover,
+a:focus {
+  color: #ce9237;
+  text-decoration: underline;
+}
+
+.feature-box-icon a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/*------------------------------------------*/
+/*	  Feature Box Content
+/*------------------------------------------*/
+
+.feature-box-content {
+	padding-left: 70px;
+}
+
+.feature-box-content h4 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+.feature-box-content a:hover,
+a:focus {
+  color: #ce9237;
+  text-decoration: underline;
+}
+
+
+/* ==========================================================================
+   08. APPLICATION DESCRIPTIONS
+   ========================================================================== */
+#appIntro {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0px;
+	z-index: 1;
+	display: block;
+	overflow: hidden;
+	padding: 0 !important;
+	text-align: right;
+	
+}
+
+
+.appIntroPage {
+	vertical-align: bottom;
+	display: inline-block;
+	padding: 50px;
+}
+
+.appIntroPage h1 {
+    color: #ffffff;
+	font-size: 275%;
+	font-weight: 500;
+	line-height: 95%;
+    margin-top: 250px;
+	margin-bottom: 20px;
+    margin-right: 10%;
+    text-shadow: 3px 3px 5px #666666;
+}
+
+
+.appIntroPage h3 {
+    color: #ffffff;
+	font-size: 150%;
+	font-weight: 350;
+	margin-top: 2.0em;
+}
+.app_descriptions {
+	padding-top: 80px;
+	padding-bottom: 0px;
+	background-color: #ecf0f1;
+	border-bottom: 1px solid #ddd;
+}  
+
+.app-box-content {
+	padding-left: 0px;
+    margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.app-box-content h4 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+    margin-top: 0px;
+}
+
+/*------------------------------------------*/
+/*	  broken_grid Image
+/*------------------------------------------*/
+
+#app_descriptions .img-responsive {
+	display: inline-block; 
+}
+/* ==========================================================================
+   11. Solar Calculator
+   ========================================================================== */
+.calculator_page {
+	vertical-align: bottom;
+	display: inline-block;
+	padding: 200px;
+}
+
+/* ==========================================================================
+   12. CONTACTS 
+   ========================================================================== */
+
+#contact {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	border-top: 1px solid #ddd;
+	background-image: url(/images/thumbs/contact_bkg.jpg);
+	background-repeat: repeat;
+	background-position: center center;
+	overflow: hidden;
+} 
+
+#contact h3 {
+	margin-bottom: 20px;
+}
+
+#contact p {
+	color: #062f00;
+	font-size: 140%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+	margin-bottom: 30px;
+}
+
+/*------------------------------------------*/
+/*	  Contact Form Input
+/*------------------------------------------*/
+
+#contact-form .form-control, #productsForm .form-control {
+	height: 50px;
+	font-size: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.productForm input,
+.productForm select {
+	background-color: #f3f3f3;
+	color: #5a843b;
+	font-size: 100%;
+	margin-bottom: 15px;
+	padding: 8px;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	box-shadow: 0 0 0 0;
+}
+
+#contact-form textarea {
+	min-height:180px;
+}
+
+/*------------------------------------------*/
+/*	  Contact Form Input Focus
+/*------------------------------------------*/
+
+.form-control:focus {
+    outline: 0px none;
+    box-shadow: none;
+}
+
+/*------------------------------------------*/
+/*	  Contact Form Submit Button
+/*------------------------------------------*/
+
+#form_btn {
+	margin-top: 30px;
+}
+
+/*------------------------------------------*/
+/*	  Contact Form Error Message 
+/*------------------------------------------*/
+
+.error {
+	color: #af3809;
+}
+
+
+/* ==========================================================================
+   12. BATTERYMANAGEMENT
+   ========================================================================== */
+
+#batterymanagement {
+	margin-top: 80px;
+    margin-bottom: 80px;
+	border-bottom: 1px solid #ddd;
+}
+
+/* ==========================================================================
+   12. BATTERYMCHEMISTRY
+   ========================================================================== */
+
+#batterchemistry {
+	margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #ecf0f1;
+	border-bottom: 1px solid #ddd;
+}
+
+/* ==========================================================================
+   12. ELECYR_BMS
+   ========================================================================== */
+
+#elecyr_bms {
+	padding-top: 80px;
+	padding-bottom: 40px;
+	background-color: #ecf0f1;
+	border-bottom: 1px solid #ddd;
+}
+
+/* ==========================================================================
+   13. FOOTER
+   ========================================================================== */
+
+#footer {
+	width: 100%;
+	background-color: #333;
+	padding-top: 20px;
+	padding-bottom: 20px
+}
+
+#footer p {
+	color: #999;
+	font-size: 13px;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 0;	
+}
+
+/*------------------------------------------*/
+/*	 Footer Social Icons  
+/*------------------------------------------*/
+
+.footer-socials {
+	display: inline-block; 
+	padding-left: 0;
+	margin-bottom: 3px;
+}
+
+.footer-socials li {
+	float: left;
+	width: auto !important;
+    display: inline-block !important;
+    vertical-align: top;
+    clear: none !important;
+}
+
+.foo_social {
+    width: 40px;
+    height: 40px;
+	color: #777;
+	font-size: 18px;
+    line-height: 40px;
+	text-align: center;
+	margin: 0 5px;
+    display: block;
+    text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	 Footer Icons Hover 
+/*------------------------------------------*/
+
+.ico-facebook:hover {color: #3b5998;}
+.ico-twitter:hover {color: #00a9ed;}
+.ico-google-plus:hover {color: #cd1111;}
+.ico-linkedin:hover {color: #015886;}
+.ico-dribbble:hover {color: #d92d84;}
+.ico-instagram:hover {color: #beb3a8;}
+.ico-pinterest:hover {color: #ac281a }
+.ico-dropbox:hover {color: #008ad2;}
+.ico-skype:hover  {color: #00a9ed; }
+.ico-youtube:hover {color: #cd1b20;}
+.ico-tumblr:hover {color: #3a5976;}
+.ico-vimeo:hover {color: #00adee;}
+.ico-flickr:hover {color: #d2d2d2 }
+.ico-github:hover {color: #222;}
+.ico-renren:hover {color: #364a83;}
+.ico-vk:hover {color: #3b5998;}
+.ico-xing:hover {color: #015f5e; }
+.ico-weibo:hover {color: #be5a843b3;}
+.ico-rss:hover {color: #ff6600;}
+
+
+
+/* ==========================================================================
+   14. SCROLL TO TOP   
+   ========================================================================== */
+
+#scrollUp {
+	display: none;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background-image: url(/images/icons/back-to-top.png);
+	background-repeat: no-repeat;
+	background-position: 50% 48%;
+	background-color:rgba(90, 132, 59, 0.65);
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+	-webkit-transition: all 250ms linear;
+	-moz-transition: all 250ms linear;
+	transition: all 250ms linear;	
+}
+
+#scrollUp:hover {
+	background-color: rgba(90, 132, 59, 0.95);
+}
+
+nav a#pull {  
+    display: none;  
+}
+
+
+
+/* ==========================================================================
+   14. CONTACT FORM RESPONSE PAGE   
+   ========================================================================== */
+   
+#form_response {
+	margin: 50px auto; 
+}
+
+#form_response .img-responsive { display: inline-block; }
+
+#form_response h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+#form_response p {
+	font-size: 18px; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+	margin-bottom: 20px;
+}
+
+#form td {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ==========================================================================
+   14. CALCULATE PAGE
+   ========================================================================== */
+
+#results {
+  width: 73%;
+}
+.c1 {
+  width: 35%;
+}
+.c2 {
+  width: 15%;
+}
+.c3 {
+  width: 30%;
+}
+.c4 {
+  width: 20%;
+}
+.l {
+  text-align: left;
+}
+.r {
+  text-align: right;
+}
+.ur {
+  text-align: right;
+  text-decoration: underline;
+}
+.u {
+  text-decoration: underline;
+}
+.c {
+  text-align: center;
+}
+.calcpane {
+  display: inline-block;
+  float: left;
+  margin: 20px 20px 5px 0px;
+  width:auto;
+  background-color: #cc9;
+}
+.calctable {
+  width: auto;
+  background-color: #cc9;
+}
+
+td.s span {
+  position: absolute;
+  display: none;
+}
+td.s:hover span {
+  display: block;
+  position: absolute;
+  background-color: #7aad55;
+  color: #fff;
+  padding: 5px;
+}
+.pxr span {
+  width: 280px;
+  height: 117px;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+.pxl span {
+  width: 300px;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+ /*=======================================================
+  16. Product Overview
+  =========================================================*/
+  
+
+
+ /*=======================================================
+  17. Structural
+  =========================================================*/
+/*==========================================================================
+   18.  
+ ========================================================================== */
+ #prices table {
+	cell-padding: 10px;
+	cell-spacing: 20px;
+	width: 90%;
+	margin-top: 4%;
+}
+#prices table td {
+	padding:12px;
+	min-width:65px;
+	white-space: nowrap;
+	color: #062f00;
+}
+#prices table tr:first-child th:first-child {
+	   -ms-transform: rotate(-30deg); /* IE 9 */	
+	-ms-transform-origin: 33% 100%; /* IE 9 */	 
+    -webkit-transform: rotate(-30deg); /* Safari */	
+	-webkit-transform-origin: 33% 100%; /* Chrome, Safari, Opera */	
+    transform: rotate(-30deg); /* Standard syntax */	
+	transform-origin: 33% 100%;
+	}
+#prices table tr:first-child th{
+	border-bottom:1px solid gray;	
+	text-align: center;
+	color:#062f00;
+    -ms-transform: rotate(-30deg); /* IE 9 */	
+	-ms-transform-origin: 0 100%; /* IE 9 */	 
+    -webkit-transform: rotate(-30deg); /* Safari */	
+	-webkit-transform-origin: 0 100%; /* Chrome, Safari, Opera */	
+    transform: rotate(-30deg); /* Standard syntax */	
+	transform-origin: 33 100%;
+}
+
+#prices table td:first-child{
+	font-weight:bold;
+}
+#prices table tr td:nth-child(7), td:nth-child(8), td:nth-child(9), td:nth-child(10){
+	text-align: center;
+}
+#prices table tr td:last-child {
+	text-align: right;
+}
+/*==========================================================================
+   19.  Images
+ ========================================================================== */
+ img.breath{
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+.respond{
+	width:100%;
+	height:auto;
+}
+
+#productFormContainer{
+	background-image: url(/images/thumbs/contact_bkg.jpg);
+}
+/*==========================================================================
+   20.  Blog
+ ========================================================================== */
+h2.blog {
+	
+}
+.mediaBar {
+	border-top: #062f00 1px solid;
+	border-bottom: #062f00 1px solid;
+	padding:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align: center;
+}
+.mediaBar li {
+	display:inline-block;
+}
+/*-----------------------------------------
+   Single Page Post
+-------------------------------------------------*/
+.blogPost {
+    margin:15px;
+}
+.imageContainer{
+	padding:0;
+}
+ul.blogBulleted li {
+	list-style-type:disc;
+}
+/*----------------------------------------
+     Blog Structure
+------------------------------------------*/
+
+#blogContent {
+	margin-right:20px;
+	margin-left:40px;
+}
+#topicNavAnchor {
+	padding-left:0;
+	padding-right:0;
+	margin-top:150px;
+	margin-right:30px;
+	margin-bottom:50px;
+	margin-left:50px;
+}
+#topicNav {
+	border-left:5px solid #5A843B;
+	border-right:5px solid #5A843B;;
+	height: 70vh;
+	padding: 0;
+}
+.fixed {
+	position: fixed;
+	top:20%;
+	bottom:25%;
+}	
+/*-------------------------------------------------
+     Posts Container
+-------------------------------------------------------*/
+.posts {
+	margin-left:5%;
+	margin-right:5%;
+}
+.item {
+	margin-top:80px;
+}
+.item h3 {
+	font-family: sans-serif;
+	padding:0px;
+}
+/* .itemContent {} */
+.item .subHeader {
+	border-bottom: 2px solid gray;
+	padding-top:15px;
+	padding-left:0px;
+	padding-right:0px;
+	margin-bottom:0px !important;
+}
+.item .subHeader p {
+	padding-top:10px;
+	padding-left:0px;
+	padding-right:0px;
+	margin-bottom:0px !important;
+	color: #062f00;
+	font-size: 13px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+}
+.blogDate {
+	text-align:left;
+	padding-left:5px;
+}
+
+.blogAuthor {
+	text-align:right;
+	padding-right:5px;
+}
+.contentWrapper {
+	padding-top:25px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+}
+.itemContent {
+	color: #062f00;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 350;
+}
+.socialNav {
+	height:200px;
+	display:flex;
+}
+.socialNav ul{
+	text-align:center;
+	vertical-align:center;
+	width:100%;
+	height:75%;
+}
+.socialNav ul li{
+	margin-top:12%;
+	margin-bottom:12%;
+	border-left: 2px dashed #afafaf;
+}
+.socialNav li a {
+	display:inline-block;
+	width:30%;
+}
